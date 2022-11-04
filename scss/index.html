@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/dist/css/main.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar_container">
+      <a href="" class="navbar_logo"><span>M</span>FRanz</a>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_item">
+          <a href="#home" class="navbar_link" id="home-page">Home</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#about" class="navbar_link" id="about-page">About</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#services" class="navbar_link" id="services-page">Services</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#skills" class="navbar_link" id="skills-page">Skills</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#contact" class="navbar_link" id="contact-page">Contact</a>
+        </li>
+        <li class="navbar_btn">
+          <a href="#singup" class="btn">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- header section -->
+  <header>
+    <div class="main" id="home">
+      <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <!-- <span style="--i:28;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span> -->
+        <!-- <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:28;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:17;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:28;"></span> -->
+      </div>
+
+      <div class="main_container">
+        <div class="main_content">
+          <h1>Hi, <span>I am</span></h1>
+          <h2>Momo, Francislie D.</h2>
+          <div class="text-animate">
+            <p class="text sec-text"></p>
+          </div>   
+          <div class="about_btn">
+            <button>Hire me</button>
+            <button>Download Cv</button>
+          </div>
+        </div>
+        <div class="main_img--container">
+          <div class="main_img--card">
+            <img src="/images/Profile.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- modal -->
+<div class="modal" id="modal-email">
+  <div class="modal_content">
+    <div class="close-btn">&times;</div>
+      <div class="modal_content-left">
+        <img src="/images/trash/img3.jpg" alt="" id="modal-img">
+      </div>
+      <div class="modal_content-right">
+        <form action="" method="get" class="modal-form" id="form">
+          <h1>Get started with us today! Create your account by filling out the information below.</h1>
+        <div class="form-validation">
+          <input type="text" class="modal-input" name="name" placeholder="Enter your name" id="name">
+          <p>Error</p>
+        </div>
+        <div class="form-validation">
+          <input type="email" class="modal-input" name="email" placeholder="Enter your email" id="email">
+          <p>Error</p>
+        </div>
+        <div class="form-validation">
+          <input type="password" class="modal-input" name="password" placeholder="Enter your password" id="password">
+          <p>Error</p>
+        </div>
+        <div class="form-validation">
+          <input type="password" class="modal-input" name="password" placeholder="Confirm your password" id="password-confirm">
+          <p>Error</p>
+        </div>
+         <input type="submit" class="modal-form-btn" value="Sign Up">
+         <span class="modal-input-login">Already have an account? Login <a href="#">Here</a></span>
+        </form>
+      </div>
+  </div>
+</div>
+
+
+
+  <!-- about me -->
+  <div class="about" id="about">
+    <div class="about_container">
+      <div class="about_heading">
+        <h1>About me</h1>
+        <p class="descript1">I am <span class="highlights">Francislie Momo</span>
+         I graduated at Aclc College of Mandaue
+         I took the course <span class="highlights">Bachelor of Science in Information Technology</span>
+         Major in programming. </p>
+ 
+         <p class="descript2">
+           I am knowledgeble in Front End and Back end Developer
+           but I am willing to be trained and willing to learn new things and
+           I am currently looking for <span class="highlights">entry-level-position</span> of <span class="highlights"> 
+            Front End, Back End Developer
+           or Associate Software Engineer.</span>
+         </p>
+      </div>   
+    </div>
+  </div>
+  
+  <!-- Services section -->
+  <div class="services" id="services">
+    <h1>What i do</h1>
+    <div class="services_wrapper">
+        <div class="services_card">
+          <img src="/images/tablet-and-laptop.png" alt="">
+           <h2>Responsive Web Design</h2>
+           <p>
+            Make sure that the web design is 
+            is responsive and adapting to different screen
+            size across different devices.
+           </p>
+        </div>
+        <div class="services_card">
+          <img src="/images/improvement.png" alt="">
+          <h2>Front End Development</h2>
+          <p>
+           Turning Web designs and mockups into interactive
+           and responsive website using html, csss and javascript
+          
+          </p>
+       </div>
+       <div class="services_card">
+        <img src="/images/backend.png" alt="">
+        <h2>Back End Development</h2>
+        <p>
+         Creating adn setup back end API endpoinsts, routes and database 
+         models using PHP and javascript, DB,
+         and adding authentication using JWT.     
+        </p>
+     </div>
+    </div>
+  </div>
+
+  <!-- Skill and knowledge -->
+
+  <div class="wrapper" id="skills">
+    <h1>Skill and knowledge</h1>
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="img1">Front End</span>
+        <span class="item" data-name="img2">Back End</span>
+        <span class="item" data-name="img3">Others</span>
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <div class="gallery">
+      <div class="images_card">
+        <div class="image" data-name="img1">
+          <img src="/images/html-1.svg" alt="">
+          <span class="tittle">HTML</span>
+        </div>
+      </div>
+      <div class="images_card">
+        <div class="image" data-name="img1">
+          <img src="/images/css-3.svg" alt="">
+          <span class="tittle">CSS</span>
+        </div>
+      </div>
+      <div class="images_card">
+        <div class="image" data-name="img1">
+          <img src="/images/javascript-1.svg" alt="">
+          <span class="tittle">JAVASCRIPT</span>
+        </div>
+      </div>
+      <div class="images_card">
+        <div class="image" data-name="img1">
+          <img src="/images/bootstrap-5-1.svg" alt="">
+          <span class="tittle">bootstrap</span>
+        </div>
+      </div>
+      <div class="images_card">
+        <div class="image" data-name="img2">
+          <img src="/images/mysql-3.svg" alt="">
+          <span class="tittle">MYSQL</span>
+        </div>
+      </div>
+      <div class="images_card">
+        <div class="image" data-name="img2">
+          <img src="/images/php-1.svg" alt="">
+          <span class="tittle">PHP</span>
+        </div> 
+      </div>
+      
+      <div class="images_card">
+        <div class="image" data-name="img3">
+          <img src="/images/php-1.svg" alt="">
+          <span class="tittle">PHOTOSHOP</span>
+        </div> 
+      </div>
+      
+    </div>
+  </div> 
+
+
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+      <span class="icon fas fa-times">&times;</span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+
+  <!-- My works -->
+<div class="main">
+  <h1 class="work_heading">My Works</h1>
+  <div class="main_content-wrapper">
+    <div class="main_content-card">
+        <img src="/images/trash/classonline.png" alt="">
+        <h2>Online Class System for Capstone</h2>
+        <span>
+         <i>PHP</i>
+         <i>HTML</i>
+         <i>CSS</i>
+         <i>JAVASCRIPT</i>
+         <i>MYSQL</i>
+         <i>BOOTSTRAP</i>
+         <i>JQUERY</i>
+        </span>
+         
+        <div class="main_btn">   
+        <input type="submit" class="disabled" disabled="disabled" value="Live View Not Available">
+        <button>View Source</button>
+        </div>
+    </div>
+      <div class="main_content-card">
+        <img src="/images/trash/classonline.png" alt="">
+         <h2>Online Class System for Capstone</h2>
+        <span>
+         <i>PHP</i><i>HTML</i><i>CSS</i><i>JAVASCRIPT</i>
+        </span>
+        <div class="main_btn">
+          <input type="submit" class="disabled" disabled="disabled" value="Live View Not Available">
+          <button>View Source</button>
+        </div>
+    </div>
+      <div class="main_content-card">
+        <img src="/images/trash/classonline.png" alt="">
+         <h2>Online Class System for Capstone</h2>
+        <span>
+         <i>PHP</i><i>HTML</i><i>CSS</i><i>JAVASCRIPT</i>
+        </span>
+        <div class="main_btn">
+        <button>Live View</button>
+        <button>View Source</button>
+        </div>
+    </div>
+    <div class="main_content-card">
+      <img src="/images/trash/classonline.png" alt="">
+       <h2>Online Class System for Capstone</h2>
+        <span>
+         <i>PHP</i><i>HTML</i><i>CSS</i><i>JAVASCRIPT</i>
+        </span>
+      <div class="main_btn">
+        <button>Live View</button>
+        <button>View Source</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="contact" id="contact">
+  <div class="contact_content">
+      <h1>Let's Connect</h1>
+      <div class="contact_link">
+        <a href="#">Linkedin</a>
+        <a href="#">Github</a>
+       <a href="#">Facebook</a>
+      </div>
+      <div class="breaks">
+         <p>OR</p>
+      </div>
+      <form action="" method="get" class="contact-form">
+          <input type="text" class="forms" name="name" placeholder="Your name">
+          <input type="email" class="forms" name="email" placeholder="Your email">
+          <input type="text" class="forms" name="subject" placeholder="Email subject (Optional)">
+          <textarea name="message" class="forms"placeholder="Message"></textarea>
+          <input type="submit" class="form-btn" value="Send Message">
+      </form>
+  </div>
+</div>
+
+<!-- footer section -->
+<div class="footer_container">
+ <div class="footer_links">
+    <div class="footer_link--wrapper">
+        <div class="footer_link--item">
+            <h2>About</h2>
+            <a href="/">adasdfsafda</a><a href="/">adasdfsafda</a>
+            <a href="/">adasdfsafda</a> 
+        </div>
+        <div class="footer_link--item">
+          <h2>Contact Us</h2>
+          <a href="/">adasdfsafda</a><a href="/">adasdfsafda</a>
+          <a href="/">adasdfsafda</a><a href="/">adasdfsafda</a> 
+      </div>
+      <div class="footer_link--wrapper">
+        <div class="footer_link--item">
+            <h2>Video</h2>
+            <a href="/">adasdfsafda</a><a href="/">adasdfsafda</a>
+            <a href="/">adasdfsafda</a> 
+        </div>
+        <div class="footer_link--item">
+          <h2>Social Media</h2>
+          <a href="/">adasdfsafda</a><a href="/">adasdfsafda</a>
+          <a href="/">adasdfsafda</a><a href="/">adasdfsafda</a>
+      </div>
+    </div>
+ </div>
+ <div class="social_media">
+  <div class="social_media--wrapper">
+    <div class="footer_logo">
+      <a href="" class="navbar_logo"><span>M</span>FRanz</a>
+    </div>
+    <div class="website_rights">
+        @copy right by Francislie
+    </div>
+    <div class="social_icons">
+      <div class="social_link--wrapper">
+          <a href=""><i class="fa fab-facebook">icon</i></a>
+          <a href=""><i class="fa fab-facebook">icon</i></a>
+          <a href=""><i class="fa fab-facebook">icon</i></a>
+          <a href=""><i class="fa fab-facebook">icon</i></a>
+        </div>
+    </div>
+  </div>
+ </div>
+</div>
+  <script src="/dist/js/app.js"></script>
+  <script src="/dist/js/modal.js"></script>
+  <script src="/dist/js/form-validation.js"></script>
+</body>
+
+</html>

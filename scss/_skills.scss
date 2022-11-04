@@ -1,0 +1,264 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 1100px;
+
+    h1{
+        text-align: center;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $blue-color;
+        letter-spacing: 1px;
+        font-size: 1.8rem;  
+        
+    }
+  }
+  
+  .wrapper nav {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+  
+  .wrapper .items {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+  
+    justify-content: space-between;
+  }
+  
+  .items span {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #007bff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .items span.active{
+    color: #007bff;
+    font-weight: 700;
+    
+  }
+  
+  .gallery{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    max-width: 500px; 
+
+  
+}
+.image{
+  margin: 10% auto;
+  height: 140px;
+  width: 100px;
+  border:2px solid rgba(213,213,213);
+  border-radius: 4px;
+  outline: none;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  
+}
+.images_card{
+  display: flex;
+  justify-content: center;
+
+  img{
+
+  
+    height: 100px;
+    width: 100px;
+    transform: scale(0.6);
+  
+  }
+
+  .tittle{
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+  }
+}
+  
+  .gallery .image:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+  }
+  
+  .gallery .image.hide {
+    display: none;
+  }
+  
+  .gallery .image.show {
+    animation: animate1 0.4s ease;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      transform: scale(0.5);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .preview-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+  }
+  
+  .preview-box .details {
+    padding: 13px 15px 13px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .details .title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .details .title p {
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  
+  .details .icon {
+    color: #007bff;
+    font-style: 22px;
+    cursor: pointer;
+  }
+  
+  .preview-box .image-box {
+    width: 50%;
+    display: flex;
+   
+  }
+  
+  .image-box img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .shadow.show {
+    display: block;
+  }
+  
+  @media (max-width: 1000px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .wrapper nav .items {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 5% auto;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      max-width: 300px; 
+      
+    }
+
+    .wrapper nav .items {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      line-height: 2;
+     
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .wrapper nav .items {
+      max-width: 600px;
+    }
+  
+    nav .items span {
+      padding: 7px 15px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    
+
+    .image{
+
+      max-width: 100px;
+
+    }
+    .gallery {
+      grid-template-columns: 1fr; 
+    }
+    
+    .wrapper {
+      margin: 30px auto;
+
+      h1{
+        font-size: 1.5rem;
+      }
+    }
+  
+    .wrapper nav .items {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav .items span {
+      margin: 5px;
+      text-align: center;
+    }
+  
+    .gallery .image {
+      width: 100%;
+    }
+  }
